@@ -1,0 +1,16 @@
+@tailwind components;
+
+@layer components{
+    .navbarWrapper{
+        @apply flex justify-between items-center shadow
+        py-5 px-10;
+    }
+
+    .logoWrapper {
+        @apply font-bold text-2xl;
+    }
+
+    .navItem{
+        @apply font-bold
+    }
+}
