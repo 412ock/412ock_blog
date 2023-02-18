@@ -1,4 +1,5 @@
 import './globals.css'
+import Navigation from '../components/Navigation';
 
 export default function RootLayout({
   children,
@@ -11,7 +12,10 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <body>{children}</body>
+      <body>
+        <Navigation/>
+        {children}
+      </body>
     </html>
   )
 }

@@ -1,17 +1,16 @@
 import Link from 'next/link';
-import style from '../styles/navigation.module.css';
+import style from '@/styles/common/navigation.module.css';
 
 export default function Navigation() {
     return (
         <nav>
             <div className={style.navbarWrapper}>
-                <div className={`${style.logoWrapper} ${style.container}`}>
-                    <Link href=''><h1 className={style.logo}>412ock' Blog</h1></Link>
+                <div className={`${style.container}`}>
+                    <Link className={style.logo} href='/'>412ock' Blog</Link>
                 </div>
-                <ul>
-                    <Link href=''>
-                        <li className={style.navItem}>Blog</li>
-                    </Link>
+                <ul className={style.navGroup}>
+                    <li className={style.navItem}><Link  href='/about'>About</Link></li>
+                    <li className={style.navItem}><Link  href='/posts'>Blog</Link></li>
                 </ul>
             </div>
         </nav>

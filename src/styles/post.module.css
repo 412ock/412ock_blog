@@ -1,0 +1,31 @@
+@tailwind components;
+
+@layer components {
+    .container {
+        @apply flex flex-col items-center m-auto lg:w-[1024px];
+    }
+
+    .postList {
+        @apply w-full mt-10;
+    }
+
+    .postItem {
+        @apply flex flex-col rounded-2xl shadow-lg p-5 mb-10;
+    }
+
+    .head {
+        @apply pt-10 pb-5 border-b border-gray-300;
+    }
+
+    .title {
+        @apply text-2xl mb-2;
+    }
+
+    .date {
+        @apply text-gray-400;
+    }
+
+    .prose {
+        @apply max-w-none py-2 border-b border-gray-300;
+    }
+}

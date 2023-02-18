@@ -1,20 +1,21 @@
-import { Inter } from '@next/font/google'
 import styles from './page.module.css'
 
 // components
-import Navigation from '../components/Navigation';
-
-const inter = Inter({ subsets: ['latin'] })
+import Notice from '@/components/common/Notice';
 
 export default function Home() {
   return (
     <>
-      <Navigation/>
       <main className={styles.main}>
-        <div className='text-xl font-bold'>
-          
-        </div>
+        <section className={styles.container}>
+          <Notice>
+            <p>😢 Sorry, Main Page is on Working.</p>
+            <p>You should go to Blog Section!</p>
+            <p>Thank you.</p>
+          </Notice>
+        </section>
       </main>
     </>
   )
 }
+
