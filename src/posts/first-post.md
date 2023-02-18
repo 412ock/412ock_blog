@@ -35,3 +35,4 @@ Dev와 관련되어 공부한 기술을 정리하는 데에는 V사의 블로그
 - [nuxt + tailwindcss 로 블로그 만들기](https://blog.harampark.com/blog/nuxt-tailwind-blog)
 - [utterence 댓글 위젯](https://ansohxxn.github.io/blog/utterances/)
 - [gatsby에서 next로 옮겨온 이유](https://yceffort.kr/2020/10/migrate-gatsby-from-nextjs)
+- [Next.js기반 blog에 uttarences 추가하기](https://grap3fruit.dev/blog/Next.js%EA%B8%B0%EB%B0%98-blog%EC%97%90-uttarences-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0)

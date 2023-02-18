@@ -2,7 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import {remark} from 'remark';
-import html from 'remark-html';
+import remarkHtml from 'remark-html';
+import remarkGfm from 'remark-gfm';
 
 const postsDirectory = path.join(process.cwd(), 'src', 'posts');
 
@@ -52,7 +53,8 @@ export async function getPostData(id: string) {
     const {data: {title, date}, content: content} = matter(fileContents);
 
     const processedContent = await remark()
-        .use(html)
+        .use(remarkGfm)
+        .use(remarkHtml)
         .process(content);
     
     const contentHtml = processedContent.toString();

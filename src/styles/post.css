@@ -1,0 +1,6 @@
+@tailwind components;
+
+.task-list-item{
+    list-style: none;
+    margin-left: -1.5rem;
+}

@@ -9,6 +9,7 @@ import { getAllPostIds, getPostData } from "@/lib/post";
 
 // style
 import postStyle from '@/styles/post.module.css';
+import '@/styles/post.css';
 
 export async function generateStaticParams(){
     const posts = getAllPostIds();
