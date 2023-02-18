@@ -10,18 +10,16 @@ import { getAllPostIds, getPostData } from "@/lib/post";
 // style
 import postStyle from '@/styles/post.module.css';
 
-export async function getStaticPaths(){
-    const paths = getAllPostIds();
-    return {
-        paths,
-        fallback: false,
-    }
+export async function generateStaticParams(){
+    const posts = getAllPostIds();
+    
+    return posts.map((post)=>({
+        id: post.params.id
+    }))
 }
 
 export default async function Post({params} : any){
     const postData = await getPostData(params.id);
-
-    console.log(postData.contentHtml);
 
     return (
         <>
