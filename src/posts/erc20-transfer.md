@@ -2,6 +2,8 @@
 title: '나의 ERC20을 컨트랙트가 옮기는 방법은 없다.'
 date: '2023-02-19'
 ---
+![solidity image](https://412ock-blog-image.s3.ap-northeast-2.amazonaws.com/ethereum_velog.jpg
+)
 
 # ERC20 전송 문제
 
