@@ -1,8 +1,12 @@
 // modules
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
 // components
 import Date from '@/components/Date';
+const Comment = dynamic(()=> import('@/components/Comment'), {
+    ssr: false
+});
 
 // post
 import { getAllPostIds, getPostData } from "@/lib/post";
@@ -38,9 +42,11 @@ export default async function Post({params} : any){
                     }
                 </div>
             </article>
+            <Comment/>
             <div className='py-5'>
                 <Link href='/posts'>← Back To List</Link>
             </div>
+
         </>
     )
 }

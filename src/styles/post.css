@@ -4,3 +4,7 @@
     list-style: none;
     margin-left: -1.5rem;
 }
+
+.utterances {
+    max-width: none;
+}
