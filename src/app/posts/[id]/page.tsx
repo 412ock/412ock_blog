@@ -28,7 +28,10 @@ export default async function Post({params} : any){
 
     return (
         <>
-            <article className='w-full'>
+            <div className='w-full py-5 px-5'>
+                <Link href='/posts'>← Back To List</Link>
+            </div>
+            <article className='w-full px-5'>
                 <div className={postStyle.head}>
                     <h1 className={postStyle.title}>{postData.title}</h1>
                     <small className={postStyle.date} >
@@ -43,10 +46,6 @@ export default async function Post({params} : any){
                 </div>
             </article>
             <Comment/>
-            <div className='py-5'>
-                <Link href='/posts'>← Back To List</Link>
-            </div>
-
         </>
     )
 }

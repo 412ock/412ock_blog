@@ -3,7 +3,7 @@
 import React from 'react';
 
 const Comment : React.FC =  ()=>(
-    <section className='w-full'
+    <section className='w-full px-5'
         ref={(elem) => {
             if (!elem) {
                 return;
