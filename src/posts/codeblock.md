@@ -13,6 +13,10 @@ const objFruits = {
 }
 ```
 
+```c
+#include <stdio.h>
+```
+
 # 문제
 
 이 블로그에서는 아마 앞으로도 코드블럭을 다루는 일이 많을 것이다. 개발 글들을 모아놓고 있기 때문에, 코드의 사례로 풀어내는 것이 이해에 도움이 될 것이라 생각하기 때문이다.
@@ -26,3 +30,14 @@ Task-List 같은 경우는 `remark-gfm`을 이용하여 손쉽게 작업할 수 
 
 현재 이 문제를 풀기 위해서 해결책을 찾고 있다.
 위의 JavaScript 코드블럭이 아름답게 색칠이 되면 이 문제가 해결된 것이라고 생각하면 된다.
+
+# 해결
+
+코드블럭에 어떻든 hljs가 클래스 명으로 넣어지는 것을 확인했다.
+hljs를 확인해보니 유명한 코드 하이라이트 라이브러리인 hightlight.js 에서 파생된게 틀림없었다.
+이를 tailwind에서 분명 plugin으로 지원해줄 것이라 생각했다.
+당연히 사용가능했고, 위 문제를 해결해 줄 수 있었다.
+
+- 한데, tailwindcss.config에 들어간 safelist가 궁금해진다.
+
+> If you need to make sure Tailwind generates certain class names that don’t exist in your content files, use the safelist option
