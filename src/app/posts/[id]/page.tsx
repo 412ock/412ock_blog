@@ -38,7 +38,7 @@ export default async function Post({params} : any){
                         <Date dateString={postData.date}/>
                     </small>
                 </div>
-                <div className={postStyle.prose}>    
+                <div className={`${postStyle.prose} content`}>
                     {postData.contentHtml? 
                         <div dangerouslySetInnerHTML={{__html: postData.contentHtml}} />
                         : <div>컨텐츠가 없습니다.</div>

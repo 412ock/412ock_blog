@@ -8,3 +8,7 @@
 .utterances {
     max-width: none;
 }
+
+.content pre {
+    background-color: #011627
+}
