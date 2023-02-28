@@ -12,15 +12,17 @@
 
     .container {
         @apply flex justify-between items-center lg:w-[1024px]
-        m-auto py-5 px-5;
+        m-auto px-5;
     }
 
     .navGroup{
-        @apply flex;
+        @apply flex
+        
     }
 
     .navItem{
-        @apply font-bold mr-2
+        @apply font-bold px-4 py-5 rounded-sm
+        duration-300 hover:bg-black hover:text-white;
     }
 
     .navItem:last-child{
