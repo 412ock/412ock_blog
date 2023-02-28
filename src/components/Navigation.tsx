@@ -8,8 +8,8 @@ export default function Navigation() {
                 <div className={`${style.container}`}>
                     <Link className={style.logo} href={`/`}>412ock&apos; Blog</Link>    
                     <ul className={style.navGroup}>
-                        <Link  href={`/about`}><li className={style.navItem}>About</li></Link>
-                        <Link  href={`/posts`}><li className={style.navItem}>Blog</li></Link>
+                        <Link className={style.navItemWrapper} href={`/about`}><li className={style.navItem}>About</li></Link>
+                        <Link className={style.navItemWrapper} href={`/posts`}><li className={style.navItem}>Blog</li></Link>
                     </ul>
                 </div>
             </div>

@@ -21,8 +21,16 @@
     }
 
     .navItem {
-        @apply font-bold px-4 py-5 rounded-sm
-        duration-500 hover:bg-black hover:text-white;
+        @apply relative font-bold px-4 py-5 rounded-sm
+        duration-500 hover:text-white
+        after:content-[""] after:w-[0%] after:h-[100%] 
+        after:absolute after:left-0 after:top-0 
+        after:bg-white after:rounded-sm
+        after:duration-500 after:ease-out;
+    }
+
+    .navItem:hover {
+        @apply after:w-full after:bg-black after:-z-10;
     }
 
     .navItem:last-child {
