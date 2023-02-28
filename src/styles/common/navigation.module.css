@@ -15,17 +15,17 @@
         m-auto px-5;
     }
 
-    .navGroup{
+    .navGroup {
         @apply flex
         
     }
 
-    .navItem{
+    .navItem {
         @apply font-bold px-4 py-5 rounded-sm
-        duration-300 hover:bg-black hover:text-white;
+        duration-500 hover:bg-black hover:text-white;
     }
 
-    .navItem:last-child{
+    .navItem:last-child {
         @apply mr-0;
     }
 }
